@@ -44,7 +44,7 @@ def label_robot() -> str:
 
 
 def build_robot(no_label: bool = False) -> str:
-    robot = '\n'.join(random_robot())
+    robot = '\n'.join(replacer(random_robot()))
     if no_label:
         return robot
 
