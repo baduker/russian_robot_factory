@@ -93,7 +93,7 @@ Vasilev NUH172
 ```
 
 If you don't want the label, set the `no_label` argument to `True`. By default,
-it's set to `True`:
+it's set to `False`:
 ```
 >>> import russian_robot_factory
 >>> print(russian_robot_factory.build_robot(no_label=True))
