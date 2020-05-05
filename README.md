@@ -34,13 +34,15 @@ _ ||||||||| _ | | __ | | __ ||______|| __|
 ~~~~
 ### What is Russian Robot Factory?
 
-This is a Python port of a Go module 
-[go-asciibot](https://github.com/mattes/go-asciibot), which in turn is in itself
-a port of a JavaScript [asciibot](https://github.com/walsh9/asciibots) generator.
+This is my Python port of a cool, little Go module 
+[go-asciibot](https://github.com/mattes/go-asciibot), which in itself is a port
+of a JavaScript [asciibot](https://github.com/walsh9/asciibots) generator.
 
-So, in an essence this is a Python ASCII bot generator with a Russian twist.
-It generates an ASCII robot and labels the robot with a random Russian name and
-an ID.
+So, in an essence, this is a port of a port... `¯\_(ツ)_/¯`
+
+Anyhow, `russian_robot_factory` is an ASCII bot generator with, well,
+a Russian twist. It produces an ASCII robot and labels the robot with a random
+Russian name and an ID.
 
 Here's a handful of examples:
 ```
