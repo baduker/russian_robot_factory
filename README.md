@@ -1,11 +1,10 @@
 # russian_robot_factory
 Just an ordinary Russian robot factory. d[ o_0 ]b
 
-# This is work in progress.
 ~~~~
                                          |
     Russian Robot Factory                |
-              version 0.1                |
+              version 0.1.0              |
                                          |
    _______                   ________    |
   |ooooooo|      ____       | __  __ |   |
@@ -33,4 +32,82 @@ _ ||||||||| _ | | __ | | __ ||______|| __|
      |_|_|          |_|__|
      [__)_)        (_(___]
 ~~~~
-# It all started with a simple (and silly) idea.
+### What is Russian Robot Factory?
+
+This is a Python port of a Go module 
+[go-asciibot](https://github.com/mattes/go-asciibot), which in turn is in itself
+a port of a JavaScript [asciibot](https://github.com/walsh9/asciibots) generator.
+
+So, in an essence this is a Python ASCII bot generator with a Russian twist.
+It generates an ASCII robot and labels the robot with a random Russian name and
+an ID.
+
+Here's a handful of examples:
+```
+     _._._     
+    -)o o(-    
+     \_=_/     
+ .-._/___\_.-. 
+ ;   \___/   ; 
+     // \\     
+    _\\ //_    
+Magomedov GYU181
+```
+```
+     .---.     
+    } - - {    
+     \_0_/     
+   .=(+++)=.   
+o="  (___)  "=o
+     [] []     
+    /:] [:\    
+Pankrat PQF621
+```
+
+```
+     ___T_     
+    | o o |    
+    |__-__|    
+   .=[::+]=.   
+ ]=' [___] '=[ 
+     (_|_)     
+     (o|o)     
+Koshelev CHF068
+```
+
+## Usage:
+
+Copy the code or clone the repo.
+
+```
+>>> import russian_robot_factory
+>>> print(russian_robot_factory.build_robot())
+    .=._,=.    
+   ' (q q) `   
+     _)-(_     
+}-. /\--o/\ .-{
+   " |___| "   
+     ]| |[     
+    [_| |_]    
+Vasilev NUH172
+```
+
+If you don't want the label, set the `no_label` argument to `True`. By default,
+it's set to `True`:
+```
+print(russian_robot_factory.build_robot(no_label=True))
+     _._._     
+    -)o o(-    
+     \_=_/     
+    /|(\)|\    
+   d |___| b   
+     ]| |[     
+    [_| |_]    
+```
+## Requirements:
+
+- `Python3+`
+
+## License
+
+Russian Robot Factory is licensed under MIT.
