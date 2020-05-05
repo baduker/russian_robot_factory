@@ -4,7 +4,7 @@ Just an ordinary Russian robot factory. d[ o_0 ]b
 ~~~~
                                          |
     Russian Robot Factory                |
-              version 0.1.0              |
+            version 0.1.0                |
                                          |
    _______                   ________    |
   |ooooooo|      ____       | __  __ |   |
@@ -95,7 +95,8 @@ Vasilev NUH172
 If you don't want the label, set the `no_label` argument to `True`. By default,
 it's set to `True`:
 ```
-print(russian_robot_factory.build_robot(no_label=True))
+>>> import russian_robot_factory
+>>> print(russian_robot_factory.build_robot(no_label=True))
      _._._     
     -)o o(-    
      \_=_/     
