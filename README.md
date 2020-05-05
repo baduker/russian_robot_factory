@@ -1,10 +1,10 @@
 # russian_robot_factory
-Just an ordinary Russian robot factory. d[ o_0 ]b
+Just an ordinary Russian robot factory. `d[ o_0 ]b`
 
 ~~~~
                                          |
     Russian Robot Factory                |
-            version 0.1.0                |
+            version 0.1.1                |
                                          |
    _______                   ________    |
   |ooooooo|      ____       | __  __ |   |
