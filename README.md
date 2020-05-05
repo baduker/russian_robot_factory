@@ -4,7 +4,7 @@ Just an ordinary Russian robot factory. `d[ o_0 ]b`
 ~~~~
                                          |
     Russian Robot Factory                |
-            version 0.1.2                |
+            version 0.1.3                |
                                          |
    _______                   ________    |
   |ooooooo|      ____       | __  __ |   |
