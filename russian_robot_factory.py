@@ -6,18 +6,22 @@ def load_parts() -> dict:
     return json.loads(open("robot_parts.json").read())
 
 
-HEX_ID = ''.join(random.choice('0123456789abcdef') for _ in range(5))
-LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-DIGITS = "012345678910"
 PARTS = load_parts()
+DIGITS = "012345678910"
+LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+def random_hex_id():
+    return ''.join(random.choice('0123456789abcdef') for _ in range(5))
 
 
 def random_robot() -> list:
+    hex_id = random_hex_id()
     robot_parts = PARTS["templates"]
     robot = [
-        robot_parts[HEX_ID[0]].split("\n")[:3],  # :3 -> HEAD
-        robot_parts[HEX_ID[1]].split("\n")[3:5],  # 3:5 -> TRUNK
-        robot_parts[HEX_ID[2]].split("\n")[5:7],  # 5:7 -> LEGS
+        robot_parts[hex_id[0]].split("\n")[:3],  # :3 -> HEAD
+        robot_parts[hex_id[1]].split("\n")[3:5],  # 3:5 -> TRUNK
+        robot_parts[hex_id[2]].split("\n")[5:7],  # 5:7 -> LEGS
     ]
     return [part for module in robot for part in module]
 
@@ -40,13 +44,15 @@ def label_robot() -> str:
 
 
 def replacer(body: list):
+    hex_id = random_hex_id()
+
     eyes = 1
-    new_eyes = PARTS["eyes"][HEX_ID[3]]
+    new_eyes = PARTS["eyes"][hex_id[3]]
     # swap eyes
     body[eyes] = body[eyes][:6] + new_eyes + body[eyes][6+len(new_eyes):]
 
     mouth = 2
-    new_mouth = PARTS["mouths"][HEX_ID[4]]
+    new_mouth = PARTS["mouths"][hex_id[4]]
     # swap mouth
     body[mouth] = body[mouth][:7] + new_mouth + body[mouth][7+len(new_mouth):]
     return body
