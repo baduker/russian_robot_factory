@@ -4,7 +4,7 @@ Just an ordinary Russian robot factory. `d[ o_0 ]b`
 ~~~~
                                          |
     Russian Robot Factory                |
-            version 0.1.4                |
+            version 0.1.5                |
                                          |
    _______                   ________    |
   |ooooooo|      ____       | __  __ |   |
@@ -67,14 +67,14 @@ Pankrat PQF621
 ```
 
 ```
-     ___T_     
-    | o o |    
-    |__-__|    
-   .=[::+]=.   
- ]=' [___] '=[ 
-     (_|_)     
-     (o|o)     
-Koshelev CHF068
+     ,_,_,     
+     \@ @/     
+     /_^_\     
+    /|(\)|\    
+   d |___| b   
+     // \\     
+    _\\ //_    
+Tretyak GTH103
 ```
 
 ## Usage:

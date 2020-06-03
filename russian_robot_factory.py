@@ -1,12 +1,8 @@
-import json
 import random
 
+import robot_parts
 
-def load_parts() -> dict:
-    return json.loads(open("robot_parts.json").read())
-
-
-PARTS = load_parts()
+PARTS = robot_parts.parts
 DIGITS = "012345678910"
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -17,11 +13,11 @@ def random_hex_id():
 
 def random_robot() -> list:
     hex_id = random_hex_id()
-    robot_parts = PARTS["templates"]
+    robot_part = PARTS["templates"]
     robot = [
-        robot_parts[hex_id[0]].split("\n")[:3],  # :3 -> HEAD
-        robot_parts[hex_id[1]].split("\n")[3:5],  # 3:5 -> TRUNK
-        robot_parts[hex_id[2]].split("\n")[5:7],  # 5:7 -> LEGS
+        robot_part[hex_id[0]].split("\n")[:3],  # :3 -> HEAD
+        robot_part[hex_id[1]].split("\n")[3:5],  # 3:5 -> TRUNK
+        robot_part[hex_id[2]].split("\n")[5:7],  # 5:7 -> LEGS
     ]
     return [part for module in robot for part in module]
 
